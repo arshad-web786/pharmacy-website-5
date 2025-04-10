@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash Medical Hall - Nepal</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            width: 80%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Gallery */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .gallery img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Testimonials */
+        blockquote {
+            font-style: italic;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-left: 4px solid #4CAF50;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        blockquote p {
+            margin: 0;
+        }
+
+        /* Contact Form */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input, form textarea, form select, form button {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        form button {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #45A049;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            section {
+                width: 100%;
+                margin: 10px;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Akash Medical Hall - Nepal</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#doctor">Our Doctor</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="doctor">
+            <h2>Book an Appointment</h2>
+            <form action="" method="POST">
+                <label for="name">नाम / Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="age">उमेर / Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="phone">फोन नम्बर / Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="address">ठेगाना / Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="date">पछ्याइएको मिति / Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">पछ्याइएको समय / Preferred Time:</label>
+                <select id="time" name="time" required>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="1:00 PM">1:00 PM</option>
+                    <option value="2:00 PM">2:00 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                </select>
+
+                <label for="message">सन्देश / Message (Optional):</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">बुक गर्नुहोस् / Book Appointment</button>
+            </form>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="pharmacy1.jpg" alt="Pharmacy Counter">
+                <img src="pharmacy2.jpg" alt="Stocked Shelves">
+                <img src="doctor.jpg" alt="Doctor Consulting">
+                <img src="services.jpg" alt="Pharmacy Services">
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+            <blockquote>
+                <p>"The staff at Akash Medical Hall always goes the extra mile to assist us. Highly recommend them!"</p>
+                <cite>– A Happy Customer</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Dr. Tarannum Khatun is incredibly professional and compassionate. Best healthcare experience!"</p>
+                <cite>– Satisfied Patient</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Akash Medical Hall has been our go-to pharmacy for years. Great service and reliable medicines."</p>
+                <cite>– Loyal Client</cite>
+            </blockquote>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Akash Medical Hall - Nepal. All rights reserved.</p>
+    </footer>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        // Collect form data
+        $name = $_POST['name'];
+        $age = $_POST['age'];
+        $phone = $_POST['phone'];
+        $address = $_POST['address'];
+        $date = $_POST['date'];
+        $time = $_POST['time'];
+        $message = $_POST['message'];
+
+        // SMS content
+        $sms_content = "New Appointment:\nName: $name\nAge: $age\nPhone: $phone\nAddress: $address\nDate: $date\nTime: $time\nMessage: $message";
+
+        // Fast2SMS API URL
+        $api_url = "https://www.fast2sms.com/dev/bulk";
+
+        // Fast2SMS API Payload
+        $payload = [
+            'sender_id' => 'FSTSMS',
+            'message' => $sms_content,
+            'language' => 'english',
+            'route' => 'p',
+            'numbers' => 'your_mobile_number' // Replace with your mobile number
+        ];
+
+        // Fast2SMS API headers
+        $headers = [
+            'authorization: your_api_key', // Replace with your Fast2SMS API key
+            'Content-Type: application/x-www-form-urlencoded'
+        ];
+
+        // Send SMS via cURL
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $api_url);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($payload));
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+        $response = curl_exec($ch);
+        $error = curl_error($ch);
+        curl_close($ch);
+
+        if ($error) {
+            echo "<p>Error sending SMS: $error</p>";
+        } else {
+            echo "<p>Appointment details sent to your mobile number!</p>";
+        }
+    }
+    ?>
+</body>
+</html>
